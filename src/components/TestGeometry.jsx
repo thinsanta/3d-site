@@ -14,8 +14,8 @@ const TestGeometry = () => {
     return (
         <>
 
-           <directionalLight args={[1, 2, 3]} intensity={5} />
-           <ambientLight intensity={2.5} />
+           <directionalLight position={[0, 10,3]} intensity={4} />
+           <ambientLight intensity={2} />
 
             <group>
                 <mesh position={[2, 0, 0]} scale={1}>
