@@ -1,19 +1,38 @@
-import React from 'react'
+import { useFrame } from '@react-three/fiber'
+import React, { useRef } from 'react'
 
 const TestGeometry = () => {
-    return (<>
-        <mesh position={[0, 0, 0]} scale={1}>
-            <sphereGeometry args={[1, 32, 32]} />
-            <meshBasicMaterial color={"purple"}/>
-        </mesh>
-        <mesh position-x={-2} scale={1.5}>
-            <boxGeometry />
-            <meshBasicMaterial color={"darkblue"} />
-        </mesh>
-        <mesh position-y={-1} rotation-x={ - Math.PI / 2} scale={10}>
-            <planeGeometry />
-            <meshBasicMaterial color={"green"}/>
-        </mesh>
+
+    const cubeRef = useRef()
+
+    useFrame((state, delta) => {
+
+        cubeRef.current.rotation.y += delta
+
+    })
+
+    return (
+        <>
+
+           <directionalLight args={[1, 2, 3]} intensity={5} />
+           <ambientLight intensity={2.5} />
+
+            <group>
+                <mesh position={[2, 0, 0]} scale={1}>
+                    <sphereGeometry args={[1, 32, 32]} />
+                    <meshStandardMaterial color={"purple"} />
+                </mesh>
+
+                <mesh ref={cubeRef} position-x={-2} scale={1.5}>
+                    <boxGeometry />
+                    <meshStandardMaterial color={"darkblue"} />
+                </mesh>
+            </group>
+
+            <mesh position-y={-1} rotation-x={- Math.PI / 2} scale={10}>
+                <planeGeometry />
+                <meshStandardMaterial color={"green"} />
+            </mesh>
         </>
     )
 }
