@@ -5,9 +5,9 @@ import TestGeometry from './components/TestGeometry'
 function App() {
 
   return (
-    <>
-      
-    </>
+    <Canvas style={{background: "lightgrey"}}>  
+      <TestGeometry />
+    </Canvas>
   )
 }
 
