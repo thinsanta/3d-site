@@ -12,11 +12,11 @@ const TestGeometry = () => {
     const planeRef = useRef()
 
     const uniforms = useRef({
-        uBigWavesElevation : {value: 0.25},
-        uBigWavesFrequency: {value: new THREE.Vector2(4, 1.5)},
+        uBigWavesElevation : {value: 0.10},
+        uBigWavesFrequency: {value: new THREE.Vector2(5, 1.5)},
         uTime: {value: 0},
-        uDepthColor: {value: new THREE.Color("#0000ff")},
-        uSurfaceColor: {value: new THREE.Color("#8888ff")}
+        uDepthColor: {value: new THREE.Color("#007ce3")},
+        uSurfaceColor: {value: new THREE.Color("#9bd8f")}
     })
 
     useFrame((state, delta) => {
