@@ -15,7 +15,7 @@ li:hover{
   -moz-text-fill-color: transparent;
 
 }
-p.fatlum{
+.fatlum{
   width: fit-content;
   background-image: linear-gradient(90deg, rgba(190,31,207,1) 25%, rgba(255,141,60,1) 100%);
   -webkit-background-clip: text;
