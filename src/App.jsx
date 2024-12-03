@@ -1,14 +1,15 @@
 import './App.css'
-import { Canvas } from '@react-three/fiber'
-import TestGeometry from './components/TestGeometry'
+import About from './components/About'
+import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import { Suspense } from 'react'
 
 function App() {
 
   return (
-    <div className='bg-[#070707] min-h-screen text-white'>
+    <div className='bg-[#222121] min-h-screen text-white'>
+          <Navbar />
           <Home />
+          <About />
     </div>
   )
 }
