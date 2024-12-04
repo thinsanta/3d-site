@@ -3,7 +3,7 @@ import React, { useMemo, useRef } from 'react'
 import waterFragmentShader from '../shaders/fragmentShader.glsl'
 import waterVertexShader from '../shaders/vertexShader.glsl'
 import * as THREE from "three";
-import { useGLTF } from '@react-three/drei';
+import { Float, useGLTF } from '@react-three/drei';
 
 /* 
 Boat by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/84-DYhLzxNq)
@@ -40,8 +40,13 @@ const WaveScene = () => {
             <directionalLight position={[0, 10, 3]} intensity={4} />
             <ambientLight intensity={2} />
 
+            
             {/* The ship model */}
-            <primitive object={ship.scene} scale={0.15} position={[1.5, 0.8, 2]} rotation={[Math.PI / 4, 0, 0]} />
+            <Float speed={2} floatIntensity={-10} floatingRange={[0, 0]}>
+
+                <primitive object={ship.scene} scale={0.15} position={[1.5, 0.8, 2]} rotation={[Math.PI / 4, 0, 0]} />
+
+            </Float>
 
             {/* The wave */}
             <mesh ref={planeRef} position={[1.5, 1, 2]} rotation={[-Math.PI / 4, 0, 0]} scale={0.6} >
