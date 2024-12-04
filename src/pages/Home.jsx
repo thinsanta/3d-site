@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber"
 import WaveScene from "../components/WaveScene"
+import self_portrait from '../assets/self_portrait.jpg'
 
 
 const Home = () => {
@@ -7,13 +8,21 @@ const Home = () => {
 
     return (
         <div className="min-h-screen">
-            <div className="">
-                <div className="text-5xl inline">I'm <div className='fatlum inline'> Fatlum Haliti </div> and I've been a web dev for almost 4 years now</div>
+            <div>
+                <div className="w-[300px] h-[300px] overflow-hidden rounded-full mx-auto mt-32">
+
+                    <img src={self_portrait} className='w-[400px]'>
+                    </img>
+                </div>
+
+                <div className="w-[900px] mx-auto mt-8 text-center">
+                    <div className="text-8xl inline">I'm <div className='fatlum inline'> Fatlum Haliti</div>, web develeper based in Malmö</div>
+                </div>
             </div>
 
-          {/*   <Canvas>
+            <Canvas>
                 <WaveScene />
-            </Canvas> */}
+            </Canvas>
         </div>
     )
 }

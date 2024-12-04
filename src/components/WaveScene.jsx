@@ -30,13 +30,12 @@ const WaveScene = () => {
 
     return (
         <>
-            <OrbitControls makeDefault />
 
             <directionalLight position={[0, 10, 3]} intensity={4} />
             <ambientLight intensity={2} />
 
-            <mesh ref={planeRef} rotation-x={-Math.PI / 2} >
-                <planeGeometry args={[5, 5, 512, 512]} />
+            <mesh ref={planeRef} rotation={[-Math.PI / 2.5, 0, 0]} >
+                <planeGeometry args={[15, 15, 512, 512]} />
                 <shaderMaterial
                     fragmentShader={waterFragmentShader}
                     vertexShader={waterVertexShader}
