@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber"
 import WaveScene from "../components/WaveScene"
+import EarthScene from "../components/EarthScene"
 
 
 const Home = () => {
@@ -19,8 +20,9 @@ const Home = () => {
                 </div>
             </div>
             <div className="h-screen mt-[-15vh]">
-                <Canvas >
-                    <WaveScene />
+                <Canvas camera={{ fov:15, position:[20, 0, 5]}} >
+                    {/* <WaveScene /> */}
+                    <EarthScene />
                 </Canvas>
             </div>
         </div>
