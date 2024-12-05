@@ -47,7 +47,6 @@ const EarthScene = () => {
 
     return (
         <>
-            <OrbitControls />
             <mesh ref={earth}>
                 <sphereGeometry  args={[2, 64, 64]}/>
                 <shaderMaterial
