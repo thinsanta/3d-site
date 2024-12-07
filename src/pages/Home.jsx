@@ -3,6 +3,7 @@ import WaveScene from "../components/WaveScene"
 import EarthScene from "../components/EarthScene"
 import { Suspense } from "react"
 import { Html } from "@react-three/drei"
+import StarsBackground from "../components/StarsBackground"
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
                 <Canvas  camera={{ fov: 15, position: [20, 0, 5] }}>
                     {/* <WaveScene /> */}
                     <Suspense>
+                        <StarsBackground />
                         <Html prepend center className="z-0">
                             <div className="">
                                 <div className="w-[300px] h-[300px] overflow-hidden rounded-full">
