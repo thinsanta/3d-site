@@ -1,7 +1,5 @@
-import { Canvas } from '@react-three/fiber'
 import './App.css'
 import About from './components/About'
-import EarthScene from './components/EarthScene'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 

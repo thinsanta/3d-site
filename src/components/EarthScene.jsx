@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import earthFragmentShader from '../shaders/earthFragmentShader.glsl'
 import earthVertexShader from '../shaders/earthVertexShader.glsl'
 import * as THREE from "three";
-import { OrbitControls } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 
 const EarthScene = () => {
@@ -41,13 +40,13 @@ const EarthScene = () => {
     useFrame((state, delta) => {
 
         // cubeRef.current.rotation.y += delta
-        earth.current.rotation.y += delta / 5
+        earth.current.rotation.y += delta / 20
        
     })
 
     return (
         <>
-            <mesh ref={earth}>
+            <mesh ref={earth} rotation-y={-1} position={[0, -2.5, -2.5]} scale={2} >
                 <sphereGeometry  args={[2, 64, 64]}/>
                 <shaderMaterial
                     fragmentShader={earthFragmentShader}
