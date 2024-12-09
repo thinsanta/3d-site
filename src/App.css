@@ -31,10 +31,18 @@ li:hover{
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
 }
+.container{
+  transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -webkit-transition: 0.15s ease-in-out;
+}
+
 .container:hover{
   width: 650px;
   box-shadow:  0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
+  transition: 0.5s ease-in;
+  -moz-transition:  0.5s ease-in-out;
+   -webkit-transition:  0.5s ease-in-out;
 }
 
 .container:hover .roleDesc{
