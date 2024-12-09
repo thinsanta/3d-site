@@ -16,13 +16,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='mx-5 justify-center'>
-            <Link activeClass='active' smooth spy to='about' onClick={aboutMe}>
-              About Me
+            <Link activeClass='active' smooth spy to='projects'>
+              Projects
             </Link>
           </li>
           <li className='mx-5 justify-center'>
-            <Link activeClass='active' smooth spy to='projects'>
-              Projects
+            <Link activeClass='active' smooth spy to='about' onClick={aboutMe}>
+              About Me
             </Link>
           </li>
           <li className='mx-5 justify-center'>
