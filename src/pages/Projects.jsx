@@ -1,4 +1,4 @@
-import { Environment, Float, PresentationControls, useGLTF } from '@react-three/drei'
+import { ContactShadows, Environment, Float, Html, PresentationControls, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 
@@ -16,8 +16,13 @@ const Projects = () => {
                 <Suspense>
                     <Environment preset='studio' />
                         <Float rotationIntensity={0.4}>
-                            <primitive object={macbook.scene} scale={0.7} position-x={-0.7} position-y={-0.7} rotation={[0.25, 0.45, -0.1]} />
+                            <primitive object={macbook.scene} scale={0.7} position-x={-0.7} position-y={-0.7} rotation={[0.25, 0.45, -0.1]}>
+                                <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.70, -1.4]} rotation-x={-0.256} >
+                                    <iframe src='https://kantur.se/' />
+                                </Html>
+                            </primitive>
                         </Float>
+                        <ContactShadows position-y={-1.0} opacity={0.5} scale={5} blur={2.0} />
 
                 </Suspense>
             </Canvas>

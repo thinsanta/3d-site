@@ -49,3 +49,9 @@ li:hover{
   display:block;
 }
 
+.htmlScreen iframe{
+  width: 1024px;
+  height: 670px;
+  border: none;
+}
+
