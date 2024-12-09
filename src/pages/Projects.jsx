@@ -12,16 +12,12 @@ const Projects = () => {
                 Projects
             </div>
 
-            <Canvas className=''>
+            <Canvas camera={{fov:35}} className=''>
                 <Suspense>
                     <Environment preset='studio' />
-
-                    <PresentationControls>
                         <Float rotationIntensity={0.4}>
-                            <primitive object={macbook.scene} scale={1.2} position={[1.5, -1.0, 0.0]} rotation={[0.25, 0, 0]} />
+                            <primitive object={macbook.scene} scale={0.7} position-x={-0.7} position-y={-0.7} rotation={[0.25, 0.45, -0.1]} />
                         </Float>
-                    </PresentationControls>
-
 
                 </Suspense>
             </Canvas>
