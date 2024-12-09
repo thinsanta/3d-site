@@ -23,3 +23,21 @@ li:hover{
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
 }
+
+.role{
+  background-image: linear-gradient(90deg, rgba(190,31,207,1) 25%, rgba(255,141,60,1) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+.container:hover{
+  width: 650px;
+  box-shadow:  0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.container:hover .roleDesc{
+  display:block;
+}
+
