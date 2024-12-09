@@ -1,13 +1,19 @@
 import './App.css'
-import { Canvas } from '@react-three/fiber'
-import TestGeometry from './components/TestGeometry'
+import About from './pages/About'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 function App() {
 
   return (
-    <Canvas style={{background: "lightgrey"}}>  
-      <TestGeometry />
-    </Canvas>
+    <div className='bg-[#222121] min-h-screen text-white'>
+          <Navbar />
+          <Home />
+          <Projects />
+          <About />
+          
+    </div>
   )
 }
 
