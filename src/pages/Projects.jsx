@@ -9,17 +9,17 @@ const Projects = () => {
     const macbook = useGLTF('./assets/macbook.gltf')
 
     return (
-        <div id='projects' className='mt-[120vh] mb-48 h-[200vh]' >
+        <div id='projects' className='mt-[120vh] mb-48 h-[200vh] mx-auto min-w-[1200px]' >
             <div className='text-4xl mx-auto w-fit mb-44' >
                 Projects
             </div>
 
-            <Canvas camera={{ fov: 35 }}>
+            <Canvas camera={{ fov: 35 }} >
                 <Suspense>
                     <Environment preset='city' />
                     <Float rotationIntensity={0.4}>
                         <primitive object={macbook.scene} scale={0.4} position-x={-0.7} position-y={0.2} rotation={[0.25, 0.45, -0.1]}>
-                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.65, -1.4]} rotation-x={-0.256} >
+                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0.02, 1.37, -1.4]} rotation-x={-0.256} >
                                 <iframe src='https://vuejs-projects-2ad81.web.app/' />
                             </Html>
                         </primitive>
@@ -56,7 +56,7 @@ const Projects = () => {
                     </Float>
                     <Float rotationIntensity={0.4}>
                         <Clone object={macbook.scene} position-x={0.5} position-y={-1.3} scale={0.4} rotation-y={-0.3} rotation-z={0.05}>
-                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.65, -1.4]} rotation-x={-0.256} >
+                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[-0.01, 1.37, -1.4]} rotation-x={-0.256} >
                                 <iframe src='https://kantur.se/' />
                             </Html>
                         </Clone>
