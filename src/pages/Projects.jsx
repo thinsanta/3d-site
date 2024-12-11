@@ -1,13 +1,13 @@
-import { ContactShadows, Environment, Float, Html, PresentationControls, useGLTF } from '@react-three/drei'
+import { Clone, ContactShadows, Environment, Float, Html, PresentationControls, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 
 const Projects = () => {
 
     const macbook = useGLTF('./assets/macbook.gltf')
-
+    
     return (
-        <div id='projects' className='mt-[120vh] mb-48 h-screen' >
+        <div id='projects' className='mt-[120vh] mb-48 h-[200vh]' >
             <div className='text-4xl mx-auto w-fit mb-44' >
                 Projects
             </div>
@@ -23,6 +23,9 @@ const Projects = () => {
                             </primitive>
                         </Float>
                         <ContactShadows position-y={-1.0} opacity={0.5} scale={5} blur={2.0} />
+
+                        <Clone object={macbook.scene} position-x={1.5} position-y={-2} />
+
 
                 </Suspense>
             </Canvas>
