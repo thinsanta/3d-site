@@ -5,26 +5,30 @@ import React, { Suspense } from 'react'
 const Projects = () => {
 
     const macbook = useGLTF('./assets/macbook.gltf')
-    
+
     return (
         <div id='projects' className='mt-[120vh] mb-48 h-[200vh]' >
             <div className='text-4xl mx-auto w-fit mb-44' >
                 Projects
             </div>
 
-            <Canvas camera={{fov:35}} className=''>
+            <Canvas camera={{ fov: 35 }} className=''>
                 <Suspense>
-                    <Environment preset='studio' />
-                        <Float rotationIntensity={0.4}>
-                            <primitive object={macbook.scene} scale={0.7} position-x={-0.7} position-y={-0.7} rotation={[0.25, 0.45, -0.1]}>
-                                <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.70, -1.4]} rotation-x={-0.256} >
-                                    <iframe src='https://kantur.se/' />
-                                </Html>
-                            </primitive>
-                        </Float>
-                        <ContactShadows position-y={-1.0} opacity={0.5} scale={5} blur={2.0} />
-
-                        <Clone object={macbook.scene} position-x={1.5} position-y={-2} />
+                    <Environment preset='city' />
+                    <Float rotationIntensity={0.4}>
+                        <primitive object={macbook.scene} scale={0.4} position-x={-0.7} position-y={0.2} rotation={[0.25, 0.45, -0.1]}>
+                            <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.80, -1.4]} rotation-x={-0.256} >
+                                <iframe src='https://vuejs-projects-2ad81.web.app/' />
+                            </Html>
+                        </primitive>
+                    </Float>
+                    <Float rotationIntensity={0.4}>
+                        <Clone object={macbook.scene} position-x={0.5} position-y={-1.3} scale={0.4} rotation-y={-0.3} rotation-z={0.05}>
+                            <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0, 1.80, -1.4]} rotation-x={-0.256} >
+                                <iframe src='https://kantur.se/' />
+                            </Html>
+                        </Clone>
+                    </Float>
 
 
                 </Suspense>
