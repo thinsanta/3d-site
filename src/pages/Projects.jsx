@@ -1,5 +1,4 @@
 import { Clone, ContactShadows, Environment, Float, Html, PresentationControls, useGLTF } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import GithubLogo from '../assets/github-mark-white.svg'
 import Site from '../assets/site.svg'

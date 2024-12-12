@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import GithubLogo from '../assets/github-mark-white.svg'
 
 const Navbar = () => {
 
@@ -30,6 +31,10 @@ const Navbar = () => {
               Contact Me
             </Link>
           </li>
+          <div className='flex right-0 absolute mr-36 gap-3'>
+          <img className='w-[40px] h-[40px]' src={GithubLogo} />
+          <img className='w-[45px] h-[40px]' src={'./assets/linkedin.png'} />
+        </div>
         </ul>
 
       </nav>
