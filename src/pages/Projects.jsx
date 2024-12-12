@@ -19,7 +19,7 @@ const Projects = () => {
                             <iframe className='rounded-lg' src='https://vuejs-projects-2ad81.web.app/' />
                         </Html>
                     </primitive>
-                    <Html position-y={1}>
+                    <Html position-y={0.95}>
                         <div className='w-[550px] text-2xl text-gray-400'>
                             This was my first hobby project that I worked on after finishing school. It's a live chat where you can signup and chat with
                             other users! I used Vuejs in the front and is connected to a firebase in the back that works as a database and websocket for
@@ -87,7 +87,7 @@ const Projects = () => {
                     </Html>
                 </Float>
                 <Html>
-                <div className='mt-[53rem] w-screen'>
+                <div className='mt-[63rem] w-screen ml-[-640px]'>
                             <a href='https://github.com/thinsanta' target='_blank' className='visitButton flex gap-3 mt-6 px-5 py-2 rounded-lg w-fit text-white items-center'>
                                 <div>
                                     <img src={GithubLogo} height={"50px"} width={"50px"} />

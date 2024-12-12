@@ -31,7 +31,7 @@ const Navbar = () => {
               Contact Me
             </Link>
           </li>
-          <div className='flex right-0 absolute mr-36 gap-3'>
+          <div className='flex right-0 absolute mr-36 gap-6'>
             <a href='https://github.com/thinsanta' target='_blank'>
               <img className='w-[40px] h-[40px]' src={GithubLogo} />
             </a>
