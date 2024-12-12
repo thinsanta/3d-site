@@ -32,8 +32,12 @@ const Navbar = () => {
             </Link>
           </li>
           <div className='flex right-0 absolute mr-36 gap-3'>
-          <img className='w-[40px] h-[40px]' src={GithubLogo} />
-          <img className='w-[45px] h-[40px]' src={'./assets/linkedin.png'} />
+            <a href='https://github.com/thinsanta' target='_blank'>
+              <img className='w-[40px] h-[40px]' src={GithubLogo} />
+            </a>
+            <a href='https://www.linkedin.com/in/fatlum-haliti-5a9b4170/' target='_blank'>
+              <img className='w-[45px] h-[40px]' src={'./assets/linkedin.png'} />
+            </a>
         </div>
         </ul>
 
