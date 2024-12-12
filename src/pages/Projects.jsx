@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import GithubLogo from '../assets/github-mark-white.svg'
 import Site from '../assets/site.svg'
+import StarsBackground from '../components/StarsBackground'
 
 const Projects = () => {
 
@@ -11,6 +12,7 @@ const Projects = () => {
     return (
         <>
             <Suspense>
+                <StarsBackground />
                 <Environment preset='city' />
                 <Float rotationIntensity={0.4}>
                     <primitive object={macbook.scene} scale={0.3} position-x={-0.6} position-y={0.2} rotation={[0.25, 0.45, -0.1]}>

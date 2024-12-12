@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <div className="h-[1100px]">
-        <Canvas className="" camera={{ fov: 15, position: [20, 0, 5] }}>
+        <Canvas className="" camera={{ fov: 35, position: [20, 0, 5] }}>
             {/* <WaveScene /> */}
             <Suspense>
                 <StarsBackground />
