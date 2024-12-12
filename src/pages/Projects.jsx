@@ -14,7 +14,7 @@ const Projects = () => {
                     <Environment preset='city' />
                     <Float rotationIntensity={0.4}>
                         <primitive object={macbook.scene} scale={0.3} position-x={-0.6} position-y={0.2} rotation={[0.25, 0.45, -0.1]}>
-                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0.05, 1.1, -1.4]} rotation-x={-0.256} >
+                            <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0.0, 1.55, -1.4]} rotation-x={-0.256} >
                                 <iframe className='rounded-lg' src='https://vuejs-projects-2ad81.web.app/' />
                             </Html>
                         </primitive>
@@ -51,7 +51,7 @@ const Projects = () => {
                     </Float>
                     <Float rotationIntensity={0.4}>
                         <Clone object={macbook.scene} position-x={0.5} position-y={-1.3} scale={0.3} rotation-y={-0.3} rotation-z={0.05}>
-                            <Html className='w-full h-screen' transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[-0.01, 1.05, -1.4]} rotation-x={-0.256} >
+                            <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[-0.0, 1.55, -1.4]} rotation-x={-0.256} >
                                 <iframe className='rounded-lg' src='https://kantur.se/' />
                             </Html>
                         </Clone>

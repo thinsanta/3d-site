@@ -46,7 +46,7 @@ const EarthScene = () => {
 
     return (
         <>
-            <mesh ref={earth} rotation-y={-1} position={[-2.5, -0.9, -2.5]} scale={1.0} >
+            <mesh ref={earth} rotation-y={-1} position={[-2.5, 0.5, -2.5]} scale={1.0} >
                 <sphereGeometry  args={[2, 64, 64]}/>
                 <shaderMaterial
                     fragmentShader={earthFragmentShader}

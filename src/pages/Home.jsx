@@ -17,7 +17,7 @@ const Home = () => {
                 <StarsBackground />
                 <Html prepend center className="z-0">
                     <div className="">
-                        <div className="w-[300px] h-[300px] overflow-hidden rounded-full">
+                        <div className="w-[300px] h-[300px] mt-[-850px] overflow-hidden rounded-full">
 
                             <img src={'./assets/self_portrait.jpg'} className='w-[400px]'>
                             </img>
