@@ -10,14 +10,14 @@ const Home = () => {
 
 
     return (
-        <div className="h-[2000px]">
+        <div className="h-[1100px]">
         <Canvas className="" camera={{ fov: 15, position: [20, 0, 5] }}>
             {/* <WaveScene /> */}
             <Suspense>
                 <StarsBackground />
                 <Html prepend center className="z-0">
                     <div className="">
-                        <div className="w-[300px] h-[300px] mt-[-850px] overflow-hidden rounded-full">
+                        <div className="w-[300px] h-[300px] mt-[-250px] overflow-hidden rounded-full">
 
                             <img src={'./assets/self_portrait.jpg'} className='w-[400px]'>
                             </img>

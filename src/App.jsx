@@ -9,17 +9,20 @@ function App() {
 
   return (
     <div className='bg-[#222121] min-h-screen text-white'>
-          <Navbar />
-          <Home />
-          <div className='h-[200vh]'>
-
+      <Navbar />
+      <Home />
+      <div id='projects' className='h-[200vh]'>
+        <div className='text-4xl mx-auto w-fit'>
+          Some of my work
+        </div>
+        <div className='h-full'>
           <Canvas camera={{ fov: 35 }}>
-            
             <Projects />
           </Canvas>
-          </div>
-          <About />
-          
+        </div>
+      </div>
+      <About />
+
     </div>
   )
 }
