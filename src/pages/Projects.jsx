@@ -14,12 +14,12 @@ const Projects = () => {
                 <StarsBackground />
                 <Environment preset='city' />
                 <Float rotationIntensity={0.4}>
-                    <primitive object={macbook.scene} scale={0.3} position-x={-0.6} position-y={0.2} rotation={[0.25, 0.45, -0.1]}>
+                    <primitive object={macbook.scene} scale={0.3} position-x={-0.6} position-y={0.45} rotation={[0.25, 0.45, -0.1]}>
                         <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0.0, 1.55, -1.4]} rotation-x={-0.256} >
                             <iframe className='rounded-lg' src='https://vuejs-projects-2ad81.web.app/' />
                         </Html>
                     </primitive>
-                    <Html position-y={0.95}>
+                    <Html position-y={1.1}>
                         <div className='w-[550px] text-2xl text-gray-400'>
                             This was my first hobby project that I worked on after finishing school. It's a live chat where you can signup and chat with
                             other users! I used Vuejs in the front and is connected to a firebase in the back that works as a database and websocket for
@@ -51,7 +51,7 @@ const Projects = () => {
                     </Html>
                 </Float>
                 <Float rotationIntensity={0.4}>
-                    <Clone object={macbook.scene} position-x={0.5} position-y={-1.1} scale={0.3} rotation-y={-0.3} rotation-z={0.05}>
+                    <Clone object={macbook.scene} position-x={0.5} position-y={-1.0} scale={0.3} rotation-y={-0.3} rotation-z={0.05}>
                         <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[-0.0, 1.55, -1.4]} rotation-x={-0.256} >
                             <iframe className='rounded-lg' src='https://kantur.se/' />
                         </Html>
@@ -87,7 +87,7 @@ const Projects = () => {
                     </Html>
                 </Float>
                 <Html>
-                <div className='mt-[63rem] w-screen ml-[-640px]'>
+                <div className='mt-[55rem] w-screen ml-[-640px]'>
                             <a href='https://github.com/thinsanta' target='_blank' className='visitButton flex gap-3 mt-6 px-5 py-2 rounded-lg w-fit text-white items-center'>
                                 <div>
                                     <img src={GithubLogo} height={"50px"} width={"50px"} />
