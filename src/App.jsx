@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import { Canvas } from '@react-three/fiber'
+import Testimonials from './pages/Testimonials'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         </div>
       </div>
       <About />
+      <Testimonials />
     </div>
   )
 }
