@@ -9,11 +9,24 @@ const About = () => {
       <div className='w-fit mx-auto'>
         About me
       </div>
-      <div className='text-2xl text-gray-400 mx-auto mt-24 flex w-full justify-center align-middle gap-x-5'>
-        <div className="w-[300px] h-[300px] overflow-hidden rounded-full">
+      <div className='text-2xl text-gray-400 mx-auto mt-24 flex w-full align-middle gap-x-5 justify-evenly'>
+        <div className=''>
+          <div className="w-[300px] h-[300px] overflow-hidden rounded-full">
 
-          <img src={'./assets/self_portrait.jpg'}>
-          </img>
+            <img src={'./assets/self_portrait.jpg'}>
+            </img>
+          </div>
+          <div>
+            <div className='mt-8 mx-auto text-base text-gray-400 w-fit'>
+              <div className='flex gap-x-4 items-center'>
+                <img src={Phone} height={"30px"} width={"30px"} /> +46735892771
+              </div>
+              <div className='flex gap-x-4 items-center'>
+                <img src={Email} height={"30px"} width={"30px"} /> fatlum93@gmail.com
+              </div>
+            </div>
+          </div>
+
         </div>
         <div className='w-[650px]'>
           I'm a skilled developer who likes to think outside the box. I can deliver high quality code while also being the one
@@ -98,19 +111,6 @@ const About = () => {
           </div>
         </div>
       </div>
-        <div className='mx-auto mt-24 w-fit'>
-          <div className='fatlum'>
-            Let's talk!
-          </div>
-          <div className='mt-14 text-base text-gray-400'>
-            <div className='flex gap-x-4 items-center'>
-              <img src={Phone} height={"30px"} width={"30px"} /> +46735892771
-            </div>
-            <div className='flex gap-x-4 items-center'>
-              <img src={Email} height={"30px"} width={"30px"} /> fatlum93@gmail.com
-            </div>
-          </div>
-        </div>
     </section>
   )
 }
