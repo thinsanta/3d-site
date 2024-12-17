@@ -5,7 +5,7 @@ import Email from '../assets/email.svg'
 const About = () => {
 
   return (
-    <section id='about' className='mt-11 text-4xl mx-auto w-full h-[140vh]'>
+    <section id='about' className='mt-11 text-4xl mx-auto w-full h-[160vh]'>
       <div className='w-fit mx-auto'>
         About me
       </div>
