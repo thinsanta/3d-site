@@ -11,7 +11,7 @@ function App() {
     <div className='bg-[#222121] min-h-screen text-white'>
       <Navbar />
       <Home />
-      <div id='projects' className='h-[230vh]'>
+      <div id='projects' className='h-[240vh]'>
         <div className='text-4xl mx-auto w-fit'>
           Some of my work
         </div>

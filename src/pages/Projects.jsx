@@ -87,7 +87,7 @@ const Projects = () => {
                     </Html>
                 </Float>
                 <Html>
-                <div className='mt-[55rem] w-screen ml-[-640px]'>
+                <div className='mt-[900px] w-screen mx-auto'>
                             <a href='https://github.com/thinsanta' target='_blank' className='visitButton flex gap-3 mt-6 px-5 py-2 rounded-lg w-fit text-white items-center'>
                                 <div>
                                     <img src={GithubLogo} height={"50px"} width={"50px"} />
