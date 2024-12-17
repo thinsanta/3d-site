@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import { Canvas } from '@react-three/fiber'
-import Contact from './pages/Contact'
 
 function App() {
 
@@ -17,7 +16,7 @@ function App() {
           Some of my work
         </div>
         <div className='h-full'>
-          <Canvas camera={{ fov: 35 }}>
+          <Canvas className='canvas' camera={{ fov: 35 }}>
             <Projects />
           </Canvas>
         </div>

@@ -19,7 +19,7 @@ const Projects = () => {
                             <iframe className='rounded-lg' src='https://vuejs-projects-2ad81.web.app/' />
                         </Html>
                     </primitive>
-                    <Html position-y={1.1}>
+                    <Html className='w-[550px]' position-y={1.1}>
                         <div className='w-[550px] text-2xl text-gray-400'>
                             This was my first hobby project that I worked on after finishing school. It's a live chat where you can signup and chat with
                             other users! I used Vuejs in the front and is connected to a firebase in the back that works as a database and websocket for
@@ -52,12 +52,12 @@ const Projects = () => {
                 </Float>
                 <Float rotationIntensity={0.4}>
                     <Clone object={macbook.scene} position-x={0.5} position-y={-1.0} scale={0.3} rotation-y={-0.3} rotation-z={0.05}>
-                        <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[-0.0, 1.55, -1.4]} rotation-x={-0.256} >
+                        <Html transform wrapperClass='htmlScreen' distanceFactor={1.17} position={[0.0, 1.55, -1.4]} rotation-x={-0.256} >
                             <iframe className='rounded-lg' src='https://kantur.se/' />
                         </Html>
                     </Clone>
-                    <Html position-y={-0.3} position-x={-0.9}>
-                        <div className='w-[550px] text-2xl text-gray-400'>
+                    <Html className='w-[550px]' position-y={-0.3} position-x={-0.9}>
+                        <div className='w-[550px] text-2xl text-gray-400 relative'>
                            My first job I got after school. I became a lead developer to create a job portal site for clients to be able to apply.
                            There were API integrations to JIRA and automation happening through tickets, with PHP in the backend.
 
@@ -102,33 +102,6 @@ const Projects = () => {
 
         </>
 
-
-        /* <div className='flex flex-wrap justify-evenly gap-10 '>
-            <div className='container w-[600px] h-fit rounded-lg'>  
-                <a className='w-full' href='https://kantur.se/' target='_blank'>
-                    <img src={'./assets/kantur-home-min.png'} className='w-full' />
-                </a>
-                <div className='role text-4xl mx-auto w-fit'>
-                    Lead Web Developer
-                </div>
-                <div className='roleDesc hidden p-3 '>
-                Took a lead developing job to create a job-portal for customers to be
-                able to apply for roles.    
-                </div>             
-            </div>
-            <div className=' container w-[600px] h-fit rounded-lg'>  
-                <a className='w-full' href='https://vuejs-projects-2ad81.web.app/' target='_blank'>
-                    <img src={'./assets/vue-live-chat-min.png'} className='w-full' />
-                </a>   
-                <div className='role text-4xl mx-auto w-fit'>
-                    Live Chat - Hobby Project
-                </div>
-                <div className='roleDesc hidden mb-6 mx-6'>
-                Took a lead developing job to create a job-portal for customers to be
-                able to apply for roles.    
-                </div>             
-            </div>
-        </div> */
     )
 }
 
