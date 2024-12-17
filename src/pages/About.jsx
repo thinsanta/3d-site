@@ -61,6 +61,9 @@ const About = () => {
             <span className='text-base bg-gray-500  px-3 py-1 items-center rounded-md w-fit'>
               Nodejs
             </span>
+            <span className='text-base bg-rose-500  px-3 py-1 items-center rounded-md w-fit'>
+              Golang
+            </span>
             <span className='text-base bg-cyan-500  px-3 py-1 items-center rounded-md w-fit'>
               React Native
             </span>
