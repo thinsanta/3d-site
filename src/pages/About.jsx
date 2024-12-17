@@ -1,9 +1,11 @@
 import React from 'react'
+import Phone from '../assets/phone.svg'
+import Email from '../assets/email.svg'
 
 const About = () => {
 
   return (
-    <section id='about' className='mt-11 text-4xl mx-auto w-full h-[120vh]'>
+    <section id='about' className='mt-11 text-4xl mx-auto w-full h-[140vh]'>
       <div className='w-fit mx-auto'>
         About me
       </div>
@@ -96,6 +98,19 @@ const About = () => {
           </div>
         </div>
       </div>
+        <div className='mx-auto mt-24 w-fit'>
+          <div className='fatlum'>
+            Let's talk!
+          </div>
+          <div className='mt-14 text-base text-gray-400'>
+            <div className='flex gap-x-4 items-center'>
+              <img src={Phone} height={"30px"} width={"30px"} /> +46735892771
+            </div>
+            <div className='flex gap-x-4 items-center'>
+              <img src={Email} height={"30px"} width={"30px"} /> fatlum93@gmail.com
+            </div>
+          </div>
+        </div>
     </section>
   )
 }
