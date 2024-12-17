@@ -3,19 +3,27 @@ import React from 'react'
 const About = () => {
 
   return (
-    <section id='about' className='h-[100vh] mt-11 text-4xl mx-auto w-full'>
+    <section id='about' className='mt-11 text-4xl mx-auto w-full h-[120vh]'>
       <div className='w-fit mx-auto'>
         About me
       </div>
-      <div className='text-2xl text-gray-400 w-[850px] mx-auto mt-24'>
-        I'm a skilled developer who likes to think outside the box. I can deliver high quality code while also being the one 
-        who came up with the idea for an improvement. If you want someone who only centers a div then I am not your guy, I am the on who will center that div
-        but I will also create a CI/CD pipeline for the project. My passion is being a flexible colleague who works on the best stack for the project
-        so we can deliver something special together.
+      <div className='text-2xl text-gray-400 mx-auto mt-24 flex w-full justify-center align-middle gap-x-5'>
+        <div className="w-[300px] h-[300px] overflow-hidden rounded-full">
 
-        <div className='mt-4'>
-          Dont't wait, contact me now and have a coffee/tea with me!
+          <img src={'./assets/self_portrait.jpg'}>
+          </img>
         </div>
+        <div className='w-[650px]'>
+          I'm a skilled developer who likes to think outside the box. I can deliver high quality code while also being the one
+          who came up with the idea for an improvement. If you want someone who only centers a div then I am not your guy, I am the on who will center that div
+          but I will also create a CI/CD pipeline for the project. My passion is being a flexible colleague who works on the best stack for the project
+          so we can deliver something special together.
+
+          <div className='mt-4'>
+            Dont't wait, contact me now and have a coffee/tea with me!
+          </div>
+        </div>
+
       </div>
       <div className='flex justify-around w-full mt-32 align-middle'>
         <div>
